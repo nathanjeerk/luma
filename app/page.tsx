@@ -185,7 +185,7 @@ function BeforeAfterSlider() {
   return (
     <div 
       ref={sliderRef}
-      className="relative w-full aspect-video rounded-2xl overflow-hidden cursor-ew-resize select-none border border-zinc-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+      className="relative w-full aspect-[4/3] md:aspect-video rounded-2xl overflow-hidden cursor-ew-resize select-none border border-zinc-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] touch-none"
       onMouseMove={(e) => e.buttons === 1 && handleDrag(e)}
       onTouchMove={handleDrag}
       onClick={handleDrag}

@@ -96,7 +96,7 @@ export default function DeadPixelTest() {
 
   // --- PRE-TEST LOBBY RENDER ---
   return (
-    <div className="flex flex-col min-h-[calc(100vh-100px)] max-w-4xl mx-auto px-8 py-20 w-full">
+    <div className="flex flex-col min-h-[calc(100vh-100px)] max-w-4xl mx-auto px-4 md:px-8 py-20 w-full">
       <Link href="/tools" className="text-zinc-500 hover:text-white flex items-center gap-2 text-sm font-semibold mb-12 w-fit transition-colors">
         <ArrowLeft className="w-4 h-4" /> BACK TO TOOLS
       </Link>

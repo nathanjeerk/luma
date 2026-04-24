@@ -35,7 +35,7 @@ const products = [
 export default function ProductPage() {
   return (
     <div className="flex flex-col min-h-[calc(100vh-100px)]">
-      <div className="max-w-7xl mx-auto px-8 py-16 w-full">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 w-full">
         
         {/* 1. Header Section */}
         <div className="mb-16 border-b border-zinc-800 pb-12">

@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-[calc(100vh-100px)]">
-      <div className="max-w-7xl mx-auto px-8 py-20 w-full">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-20 w-full">
         
         {/* 1. Hero Section */}
         <section className="mb-32 pt-10 text-center max-w-4xl mx-auto">
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-black/20 rounded-full blur-2xl"></div>
           
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white relative z-10">Experience your monitor the way it was intended.</h2>
-          <Link href="/tools" className="inline-flex items-center gap-2 bg-white text-blue-600 hover:bg-zinc-100 px-8 py-3 rounded-lg font-bold transition-colors relative z-10 shadow-lg">
+          <Link href="/tools" className="inline-flex items-center gap-2 bg-white text-blue-600 hover:bg-zinc-100 px-4 md:px-8 py-3 rounded-lg font-bold transition-colors relative z-10 shadow-lg">
             GO TO TOOLS <ArrowRight className="w-4 h-4" />
           </Link>
         </section>
