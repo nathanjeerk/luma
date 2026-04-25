@@ -17,7 +17,7 @@ export default function ToolsPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-16 flex flex-col min-h-[calc(100vh-100px)]">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 flex flex-col min-h-[calc(100vh-100px)]">
       
       {/* 1. Tools Hero */}
       <div className="mb-16">
