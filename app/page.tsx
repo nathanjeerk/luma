@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { Eye, Monitor, Grid, Target, Shield, Zap } from 'lucide-react'
+import { Eye, Monitor, Grid, Target, Shield, Zap, TargetIcon, Video, LineChart, Code } from 'lucide-react'
 import Link from 'next/link'
 
 export default function LandingPage() {
@@ -84,46 +84,60 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* 4. How You Really Work Grid */}
-        <section className="py-24 border-b border-zinc-900">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight">BUILT FOR HOW<br/>YOU REALLY WORK.</h2>
+        {/* 4. NEW Built For Your Best Work Section */}
+        <section className="py-24 border-b border-zinc-900 text-center">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold tracking-tight mb-2 uppercase">Built For Your Best Work</h2>
+            <p className="text-zinc-400">Whatever your stack, there's a LUMA setup to fix your flow.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
-            <div className="flex gap-4">
-              <Target className="w-6 h-6 text-zinc-400 shrink-0" strokeWidth={1.5} />
-              <div>
-                <h3 className="font-semibold text-sm mb-2 tracking-wide uppercase">Focus</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed">
-                  Eliminate distractions.<br/>One screen.<br/>Everything in view.
-                </p>
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto px-4 md:px-0">
+            
+            {/* Persona 1: DESIGNERS */}
+            <div className="flex flex-col items-center">
+                <p className="font-semibold text-xs tracking-widest text-white mb-2 uppercase">Designers</p>
+                <Link href="/product" className="relative w-full aspect-[4/5] bg-zinc-950 border border-zinc-800 rounded-lg overflow-hidden flex flex-col items-center justify-center p-4 group hover:border-blue-500/50 transition-colors">
+                    <Eye className="w-8 h-8 text-zinc-700/50 mb-3" />
+                    <img src='/dummy-monitor-vertical.webp' alt='vertical monitor' className="w-32 h-auto text-zinc-700/50 drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]" />
+                    <p className="mt-4 text-[10px] text-zinc-600 font-mono text-center">VISUAL WORK</p>
+                </Link>
             </div>
-            <div className="flex gap-4">
-              <Shield className="w-6 h-6 text-zinc-400 shrink-0" strokeWidth={1.5} />
-              <div>
-                <h3 className="font-semibold text-sm mb-2 tracking-wide uppercase">Comfort</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed">
-                  Designed for long hours.<br/>Less strain.<br/>More clarity.
-                </p>
-              </div>
+
+            {/* Persona 2: DEVELOPERS */}
+            <div className="flex flex-col items-center">
+                <p className="font-semibold text-xs tracking-widest text-white mb-2 uppercase">Developers</p>
+                <Link href="/product" className="relative w-full aspect-[4/5] bg-zinc-950 border border-zinc-800 rounded-lg overflow-hidden flex flex-col items-center justify-center p-4 group hover:border-blue-500/50 transition-colors">
+                    <Code className="w-8 h-8 text-zinc-700/50 mb-3" />
+                    <img src='/dummy-monitor-vertical.webp' alt='vertical monitor' className="w-32 h-auto text-zinc-700/50 drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]" />
+                    <p className="mt-4 text-[10px] text-zinc-600 font-mono text-center">DEEP CODE</p>
+                </Link>
             </div>
-            <div className="flex gap-4">
-              <Zap className="w-6 h-6 text-zinc-400 shrink-0" strokeWidth={1.5} />
-              <div>
-                <h3 className="font-semibold text-sm mb-2 tracking-wide uppercase">Flow</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed">
-                  Stay in your work.<br/>No interruptions.<br/>No friction.
-                </p>
-              </div>
+
+            {/* Persona 3: TRADERS */}
+            <div className="flex flex-col items-center">
+                <p className="font-semibold text-xs tracking-widest text-white mb-2 uppercase">Traders</p>
+                <Link href="/product" className="relative w-full aspect-[4/5] bg-zinc-950 border border-zinc-800 rounded-lg overflow-hidden flex flex-col items-center justify-center p-4 group hover:border-blue-500/50 transition-colors">
+                    <LineChart className="w-8 h-8 text-zinc-700/50 mb-3" />
+                    <img src='/dummy-monitor-vertical.webp' alt='vertical monitor' className="w-32 h-auto text-zinc-700/50 drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]" />
+                    <p className="mt-4 text-[10px] text-zinc-600 font-mono text-center">DATA WORK</p>
+                </Link>
             </div>
+
+            {/* Persona 4: REMOTE WORKERS */}
+            <div className="flex flex-col items-center">
+                <p className="font-semibold text-xs tracking-widest text-white mb-2 uppercase">Remote Workers</p>
+                <Link href="/product" className="relative w-full aspect-[4/5] bg-zinc-950 border border-zinc-800 rounded-lg overflow-hidden flex flex-col items-center justify-center p-4 group hover:border-blue-500/50 transition-colors">
+                    <Video className="w-8 h-8 text-zinc-700/50 mb-3" />
+                    <img src='/dummy-monitor-vertical.webp' alt='vertical monitor' className="w-32 h-auto text-zinc-700/50 drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]" />
+                    <p className="mt-4 text-[10px] text-zinc-600 font-mono text-center">COLLAB WORK</p>
+                </Link>
+            </div>
+
           </div>
         </section>
 
         {/* 5. Immersive Image Callout */}
         <section className="py-24 border-b border-zinc-900">
-          {/* Replace this bg-zinc-900 placeholder with your actual image later */}
           <div className="w-full aspect-[21/9] md:aspect-[2.5/1] bg-zinc-900 rounded flex items-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-l from-black/90 via-black/40 to-transparent"></div>
             
@@ -168,7 +182,7 @@ export default function LandingPage() {
           <h2 className="text-3xl font-bold mb-4 tracking-tight">UPGRADE YOUR WORKSPACE</h2>
           <p className="text-zinc-400 mb-8">See Better. Work Better.</p>
           <Link href="/product" className="inline-block bg-[#0055FF] hover:bg-blue-600 text-white px-8 py-3 rounded text-sm font-semibold transition-colors tracking-wide">
-            UPGRADE
+            GET LUMA
           </Link>
         </section>
 
@@ -225,7 +239,6 @@ function BeforeAfterSlider() {
       >
         {/* Background: "Before" */}
         <div className="absolute inset-0 flex items-center justify-center p-8 bg-[#111] backdrop-sepia-[.4] opacity-80">
-          {/* Placeholder for BEFORE image content */}
           <div className="w-full h-full border border-zinc-800 rounded bg-zinc-900/50 flex items-center justify-center">
              <span className="text-zinc-600 text-sm tracking-widest font-mono">[BEFORE IMAGE]</span>
           </div>
